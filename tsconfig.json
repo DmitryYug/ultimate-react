@@ -11,7 +11,10 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
-
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // Allows to work with packages
     // that use commonJs using 'import' (not require(), module.exports)
     // for example 'import Moment from 'moment'

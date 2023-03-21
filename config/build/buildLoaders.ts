@@ -4,6 +4,11 @@ import {BuildOptions} from "./types/config";
 
 export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 
+    const svgLoader = {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+    }
+
     const cssLoader = {
         test: /\.s[ac]ss$/i,
         use: [
@@ -22,6 +27,7 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
             "sass-loader",
         ],
     }
+
     const typescriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
@@ -31,5 +37,6 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     return [
         typescriptLoader,
         cssLoader,
+        svgLoader
     ]
 }

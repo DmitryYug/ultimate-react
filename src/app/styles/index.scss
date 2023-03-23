@@ -13,3 +13,13 @@
     text-decoration: none;
   }
 }
+
+.page {
+  &-content {
+    display: flex;
+  }
+  &-wrapper {
+    padding: 20px;
+    flex-grow: 1;
+  }
+}

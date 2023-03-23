@@ -13,10 +13,15 @@ export function AppRouter() {
                 {Object.values(routes).map(({path, element}) => (
                     <Route key={path}
                            path={path}
-                           element={element}
+                           element={(
+                               <div className='page-wrapper'>
+                                   {element}
+                               </div>
+                           )}
                     />
-                ))}
-            </Routes>
-        </Suspense>
-    );
+            ))}
+        </Routes>
+</Suspense>
+)
+    ;
 }

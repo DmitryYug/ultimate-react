@@ -10,3 +10,17 @@
 .collapsed {
   width: var(--sidebar-width-collapsed);
 }
+
+.switchers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.translate {
+  margin-right: 20px;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import {useTranslation} from "react-i18next";
-import {Button} from "shared";
 
 const TranslateTest = () => {
     const {t} = useTranslation('main');

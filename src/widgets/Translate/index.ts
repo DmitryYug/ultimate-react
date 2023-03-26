@@ -1,1 +1,1 @@
-export {Translate} from './ui/Translate'
+export { Translate } from './ui/Translate';

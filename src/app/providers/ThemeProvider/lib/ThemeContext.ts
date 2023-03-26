@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export enum Themes {
     LIGHT = 'light',
@@ -9,10 +9,8 @@ export interface ThemeInterface {
     setTheme?: (theme: Themes) => void
 }
 
-export const LOCAL_STORAGE_THEME_KEY = 'theme'
+export const LOCAL_STORAGE_THEME_KEY = 'theme';
 
-const ThemeContext = React.createContext<ThemeInterface>({})
+const ThemeContext = React.createContext<ThemeInterface>({});
 
-export default ThemeContext
-
-
+export default ThemeContext;

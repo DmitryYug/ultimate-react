@@ -3,8 +3,6 @@ export function classNames(cls: string, modes: ModeTypes = {}, additional: strin
     return [
         cls,
         ...additional.filter(Boolean),
-        ...Object.entries(modes).map(([key, value]) => {
-            return value ? key : null
-        }),
-    ].join(' ')
+        ...Object.entries(modes).map(([key, value]) => (value ? key : null)),
+    ].join(' ');
 }

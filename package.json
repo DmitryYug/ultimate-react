@@ -7,7 +7,10 @@
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
-    "eslint:fix": "eslint --fix --ext .ts,.tsx ."
+    "eslint:ts": "eslint --ext .ts,.tsx .",
+    "eslint:ts:fix": "eslint --fix --ext .ts,.tsx .",
+    "stylelint": "npx stylelint \"**/*.scss\"",
+    "stylelint:fix": "npx stylelint \"**/*.scss\" --fix"
   },
   "keywords": [],
   "author": "",
@@ -44,7 +47,9 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.2",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "stylelint": "^14.5.3",
+    "stylelint-config-standard-scss": "^3.0.0"
   },
   "dependencies": {
     "i18next": "^21.6.11",

@@ -4,7 +4,6 @@ import { Themes, useTheme } from 'app/providers/ThemeProvider';
 import ThemeLight from 'shared/assets/icons/ThemeLight.svg';
 import ThemeDark from 'shared/assets/icons/ThemeDark.svg';
 import { ThemeButton } from 'shared/ui/Button/Button';
-import cls from './ThemeToggle.module.scss';
 
 interface ThemeToggleProps {
     className?: string
@@ -16,7 +15,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({ className }) => {
     return (
         <Button
             onClick={themeToggle}
-            className={classNames(cls.ThemeToggle, {}, [className])}
+            className={classNames('', {}, [className])}
             theme={ThemeButton.CLEAR}
         >
             {theme === Themes.LIGHT

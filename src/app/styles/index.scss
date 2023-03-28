@@ -4,22 +4,24 @@
 @import "./variables/global";
 
 .app {
-  font: var(--font-m);
-  color: var(--primary-color);
-  background-color: var(--bg-color);
-  height: 100vh;
-  a {
-    margin-right: 20px;
-    text-decoration: none;
-  }
+    font: var(--font-m);
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    height: 100vh;
+
+    a {
+        margin-right: 20px;
+        text-decoration: none;
+    }
 }
 
 .page {
-  &-content {
-    display: flex;
-  }
-  &-wrapper {
-    padding: 20px;
-    flex-grow: 1;
-  }
+    &-content {
+        display: flex;
+    }
+
+    &-wrapper {
+        padding: 20px;
+        flex-grow: 1;
+    }
 }

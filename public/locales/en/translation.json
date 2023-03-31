@@ -2,5 +2,6 @@
   "main link": "main",
   "about link": "about",
   "toggle": "collapse",
-  "translate": "рус"
+  "translate": "рус",
+  "not found": "not found"
 }

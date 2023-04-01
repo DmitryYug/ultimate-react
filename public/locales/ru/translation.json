@@ -3,5 +3,6 @@
   "about link": "о проекте",
   "toggle": "свернуть",
   "translate": "eng",
-  "not found": "Страница не найдена"
+  "not found": "Страница не найдена",
+  "page render error": "Что-то пошло не так"
 }

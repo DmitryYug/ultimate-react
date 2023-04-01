@@ -3,5 +3,6 @@
   "about link": "about",
   "toggle": "collapse",
   "translate": "рус",
-  "not found": "not found"
+  "not found": "not found",
+  "page render error": "Ooops...page crushed"
 }

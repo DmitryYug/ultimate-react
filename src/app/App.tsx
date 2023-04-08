@@ -1,14 +1,14 @@
-import React, {Suspense} from 'react';
+import React, { Suspense } from 'react';
 
-import {useTheme} from 'app/providers/ThemeProvider';
-import {AppRouter} from 'app/providers/router';
+import { useTheme } from 'app/providers/ThemeProvider';
+import { AppRouter } from 'app/providers/router';
+import { ErrorBoundary } from 'app/providers/errorBoundary';
 
-import {classNames} from 'shared/lib/classNames/classNames';
-import {Navbar} from 'widgets/Navbar';
-import {Sidebar} from 'widgets/Sidebar';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Navbar } from 'widgets/Navbar';
+import { Sidebar } from 'widgets/Sidebar';
 
 import './styles/index.scss';
-import {ErrorBoundary} from 'app/providers/errorBoundary';
 
 export function App() {
     const { theme } = useTheme();

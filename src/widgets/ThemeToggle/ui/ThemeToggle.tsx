@@ -16,7 +16,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({ className }) => {
         <Button
             onClick={themeToggle}
             className={classNames('', {}, [className])}
-            theme={ThemeButton.CLEAR}
+            btnStyle={ThemeButton.CLEAR}
         >
             {theme === Themes.LIGHT
                 ? <ThemeDark width={30} height={30} />

@@ -2,11 +2,12 @@
   "compilerOptions": {
     "outDir": "./dist/",
 
-    // Highlights untyped variables. We still can use 'any' but set it clearly
+    /** Highlights untyped variables.
+    We still can use 'any'but set it clearly **/
     "noImplicitAny": true,
     "module": "ESNext",
 
-    // Compieled version of js. es5 for older browsers
+    // Compiled version of js. es5 for older browsers
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
@@ -15,21 +16,19 @@
     "paths": {
       "*": ["./src/*"]
     },
-    // Allows to work with packages
-    // that use commonJs using 'import' (not require(), module.exports)
-    // for example 'import Moment from 'moment'
-    // we get 'undefined' without flag and we get [Object object] with flag
+    /** Allows to work with packages that use commonJs using
+     'import' (not require(), module.exports) for example
+      'import Moment from 'moment' we get 'undefined' without
+       flag and we get [Object object] with flag**/
     "esModuleInterop": true,
 
-    // Allows default imports. Now we can use
-    // import React from 'react'
-    // instead of
-    // import * as React from 'react'
+    /** Allows default imports. Now we can use import
+    React from 'react' instead of import * as React from 'react' **/
     "allowSyntheticDefaultImports": true
   },
 
-  // Option from documentation for correct import modules
-  // for flags 'esModuleInterop' 'allowSyntheticDefaultImports'
+  /** Option from documentation for correct import modules
+   for flags 'esModuleInterop' 'allowSyntheticDefaultImports' **/
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"

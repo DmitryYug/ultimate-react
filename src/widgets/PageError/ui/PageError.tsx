@@ -1,6 +1,6 @@
 import React from 'react';
-import {classNames} from 'shared';
-import {useTranslation} from 'react-i18next';
+import { classNames } from 'shared';
+import { useTranslation } from 'react-i18next';
 import cls from './PageError.module.scss';
 
 interface PageErrorProps {

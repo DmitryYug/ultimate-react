@@ -17,8 +17,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
         setCollapsed((prevState) => !prevState);
     };
     return (
-        <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
-            <Button onClick={sidebarToggle}>
+        <div
+            data-testid="sidebar"
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
+        >
+            <Button
+                data-testid="toggleButton"
+                onClick={sidebarToggle}
+            >
                 {t('toggle')}
             </Button>
             <div className={cls.switchers}>

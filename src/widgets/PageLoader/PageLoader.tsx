@@ -1,5 +1,5 @@
 import React from 'react';
-import {classNames, Loader} from 'shared';
+import { classNames, Loader } from 'shared';
 import cls from './PageLoader.module.scss';
 
 interface PageLoaderProps {

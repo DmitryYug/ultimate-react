@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, classNames } from 'shared';
 import { Themes, useTheme } from 'app/providers/ThemeProvider';
-import ThemeLight from 'shared/assets/icons/ThemeLight.svg';
 import ThemeDark from 'shared/assets/icons/ThemeDark.svg';
+import ThemeLight from 'shared/assets/icons/ThemeLight.svg';
 import { ThemeButton } from 'shared/ui/Button/Button';
 
 interface ThemeToggleProps {

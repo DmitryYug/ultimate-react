@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react';
 import { GlobalStyleDecorator } from '../../src/shared/config/storyBook/GlobalStylesDecorator';
+import RouterDecorator from '../../src/shared/config/storyBook/RouterDecorator';
 
 const preview: Preview = {
     parameters: {
@@ -13,6 +14,7 @@ const preview: Preview = {
     },
     decorators: [
         (Story) => GlobalStyleDecorator(Story),
+        (Story) => RouterDecorator(Story),
     ],
 };
 

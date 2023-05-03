@@ -33,7 +33,6 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorStat
             // Можно отрендерить запасной UI произвольного вида
             return <PageError />;
         }
-
         return children;
     }
 }
